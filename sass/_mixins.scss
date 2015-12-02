@@ -1,0 +1,8 @@
+@mixin barbie ($clmns, $spcs, $wdth) {
+    width: ($wdth - $spcs * ($clmns - 1)) / $clmns;
+    margin-left: $spcs;
+        
+    &:first-child {
+        margin-left: 0;
+        }
+}
